@@ -50,13 +50,13 @@
 }
 
 .card:nth-child(1) {
-    background: #5d8cf7 ;
+    background: #2a55f6;
 }
 .card:nth-child(2) {
     background: whitesmoke;
 }
 .card:nth-child(3) {
-    background: #5d8cf7  ;
+    background: #2a55f6 ;
 }
 
 .card span {
