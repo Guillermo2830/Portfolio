@@ -53,8 +53,7 @@
     font-weight: bold;
 }
 .menu a:hover{
-    
-    text-decoration: 2px underline white;
+    color: white;
 }
 
 .contact {
