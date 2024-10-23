@@ -78,4 +78,11 @@
     font-size: 20px;
 }
 
+@media (max-width: 768px) {
+    .contact__container{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
 
