@@ -1,9 +1,21 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 .certificates__container {
     width: 100%;
     height: 86vh;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.certificates__container h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 .carousel__container {
@@ -43,4 +55,11 @@
 
 .right-arrow{
     right: 10px;
+}
+
+@media  (max-width: 768px){
+    .certificates__container {
+        flex-direction: column;
+        height: auto;
+    }
 }
