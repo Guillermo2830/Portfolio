@@ -66,12 +66,12 @@ window.addEventListener('beforeunload', function() {
 // carousel action
 document.addEventListener('DOMContentLoaded', () => {
     const images = [
-        '/img/certificates/react.png',
-        '/img/certificates/js.png',
-        '/img/certificates/ingeniero_geologo.png',
-        '/img/certificates/html__&__css.png',
-        '/img/certificates/figma.png',
-        '/img/certificates/diplomado.png'
+        './img/certificates/react.png',
+        './img/certificates/js.png',
+        './img/certificates/ingeniero_geologo.png',
+        './img/certificates/html__&__css.png',
+        './img/certificates/figma.png',
+        './img/certificates/diplomado.png'
     ];
     let currentIndex = 0;
 
