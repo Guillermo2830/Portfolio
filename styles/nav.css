@@ -12,6 +12,7 @@
 .menu__container h1 {
     margin-left: 30px;
     font-family: "Dm sans", sans-serif;
+    cursor: pointer;
 }
 
 .name {
