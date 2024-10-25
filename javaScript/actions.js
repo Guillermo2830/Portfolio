@@ -5,12 +5,12 @@ document.getElementById('hamburger').addEventListener('click', function () {
 });
 // control the color of the nav items
 const links = {
-    './index.html': 'home',
-    './about.html': 'about',
-    './hard_skills.html': 'hard-skills',
-    './soft_skills.html': 'soft-skills',
-    './certificates.html': 'certificates',
-    './contact.html': 'contact'
+    '/index.html': 'home',
+    '/about.html': 'about',
+    '/hard_skills.html': 'hard-skills',
+    '/soft_skills.html': 'soft-skills',
+    '/certificates.html': 'certificates',
+    '/contact.html': 'contact'
 };
 
 function markActiveLink() {
@@ -58,7 +58,7 @@ window.addEventListener('load', function() {
 });
 
 window.addEventListener('beforeunload', function() {
-    if (window.location.pathname === './contact.html') {
+    if (window.location.pathname === '/contact.html') {
         localStorage.removeItem('contactClicked');
     }
 });
