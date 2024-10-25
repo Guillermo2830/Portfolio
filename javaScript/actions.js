@@ -5,12 +5,12 @@ document.getElementById('hamburger').addEventListener('click', function () {
 });
 // control the color of the nav items
 const links = {
-    '/pages/index.html': 'home',
-    '/pages/about.html': 'about',
-    '/pages/hard_skills.html': 'hard-skills',
-    '/pages/soft_skills.html': 'soft-skills',
-    '/pages/certificates.html': 'certificates',
-    '/pages/contact.html': 'contact'
+    './index.html': 'home',
+    './about.html': 'about',
+    './hard_skills.html': 'hard-skills',
+    './soft_skills.html': 'soft-skills',
+    './certificates.html': 'certificates',
+    './contact.html': 'contact'
 };
 
 function markActiveLink() {
