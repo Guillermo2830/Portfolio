@@ -31,11 +31,13 @@
 .presentation__info h1 {
     font-size: 70px;
     color: white;
+    font-family: "Dm sans", sans-serif;
 }
 
 .presentation__info p {
     font-size: 28px ;
     color: white;
+    font-family: "Dm sans", sans-serif;
 }
 
 .img__container{
@@ -78,21 +80,25 @@
 
   .work__presentation h1{
     font-size: 60px;
+    font-family: "Dm sans", sans-serif;
   }
 
   .work__presentation p {
     margin-top: 25px;
     font-size: 20px;
+    font-family: "Dm sans", sans-serif;
   }
   
   .mywork_cards h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    font-family: "Dm sans", sans-serif;
   }
   
   .mywork_cards p {
-    font-size: 18px;
+    font-size: 17px;
     color: #333;
+    font-family: "Dm sans", sans-serif;
   }
 
   .mywork_cards {
@@ -115,6 +121,8 @@
     text-align: left;
     overflow: hidden;
     box-shadow:  32px 32px 64px #7b7b7b;
+    display: flex;flex-direction: column;
+    justify-content: space-between;
   }
    .card img {
     width: 350px;
@@ -122,18 +130,25 @@
     border-radius: 8px;
 }
 
+.info-card {
+   margin-bottom: 50px;
+}
+
+.info-card p {
+  font-family: "Dm sans", sans-serif;
+}
+
 .card h1{
     margin-bottom: 8px;
+    font-family: "Dm sans", sans-serif;
 }
 
   .icons {
     position: relative;
     display: flex;
-    justify-content: start;
     gap: 10px;
-    top: 30px;
     bottom: 0;
-    font-size: 30px;    
+    font-size: 30px;   
   }
 
   .icons i {
@@ -163,6 +178,7 @@ footer {
     font-size: 30px;
     font-weight: bold;
     color: white;
+    font-family: "Dm sans", sans-serif;
 }
 
 .info-right i {

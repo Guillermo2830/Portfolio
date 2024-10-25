@@ -16,6 +16,7 @@
 .certificates__container h1 {
     margin-bottom: 20px;
     font-size: 40px;
+    font-family: "Dm sans", sans-serif;
 }
 
 .carousel__container {
@@ -61,5 +62,9 @@
     .certificates__container {
         flex-direction: column;
         height: auto;
+    }
+    .certificates__container h1 {
+        font-size: 30px;
+        margin-top: 100px;
     }
 }

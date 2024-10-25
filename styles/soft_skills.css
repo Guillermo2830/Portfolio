@@ -25,6 +25,7 @@
 
 .soft_skills__info h1 {
     font-size: 40px;
+    font-family: "Dm sans", sans-serif;
 }
 
 .image__container {
@@ -57,6 +58,10 @@
     align-items: center;
     gap: 20px;
     box-shadow:  10px 10px 0px black;
+}
+
+.card h2 {
+    font-family: "Dm sans", sans-serif;
 }
 
 .card:nth-child(2){
