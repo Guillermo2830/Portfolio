@@ -1,9 +1,14 @@
+
 document.getElementById('hamburger').addEventListener('click', function () {
     var menuContactContainer = document.querySelector('.menu-contact-container');
 
     menuContactContainer.classList.toggle('active');
 });
 // control the color of the nav items
+document.addEventListener("DOMContentLoaded", () => {
+
+})
+/*
 const links = {
     '/index.html': 'home',
     '/about.html': 'about',
@@ -41,27 +46,88 @@ window.addEventListener('load', function () {
     restoreActiveLink();
 });
 
+window.addEventListener('beforeunload', clearActiveLink);*/
+const links = {
+    './index.html': 'home',
+    './about.html': 'about',
+    './hard_skills.html': 'hard-skills',
+    './soft_skills.html': 'soft-skills',
+    './certificates.html': 'certificates',
+    './contact.html': 'contact'
+};
+
+function markActiveLink() {
+    const currentPath = window.location.pathname.split('/').pop();
+    
+    if (links[`./${currentPath}`]) {
+        const activeLinkId = links[`./${currentPath}`];
+        document.getElementById(activeLinkId)?.classList.add('active');
+        localStorage.setItem('activeLink', activeLinkId);
+    }
+}
+
+function restoreActiveLink() {
+    const activeLinkId = localStorage.getItem('activeLink');
+    if (activeLinkId) {
+        document.getElementById(activeLinkId)?.classList.add('active');
+    }
+}
+
+function clearActiveLink() {
+    const currentPath = window.location.pathname.split('/').pop();
+    if (!links[`./${currentPath}`]) {
+        localStorage.removeItem('activeLink');
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    markActiveLink();
+    restoreActiveLink();
+});
+
 window.addEventListener('beforeunload', clearActiveLink);
 
 //Control the color of the class contact
 
-document.getElementById('contact').addEventListener('click', function () {
-    this.classList.add('active')
-
-    localStorage.setItem('contactClicked', 'true')
-})
-
-window.addEventListener('load', function() {
+/*document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('contact').addEventListener('click', function () {
+        this.classList.add('active')
+    
+        localStorage.setItem('contactClicked', 'true')
+    })
+    
+    window.addEventListener('load', function() {
+        if (localStorage.getItem('contactClicked') === 'true') {
+            document.getElementById('contact').classList.add('active');
+        }
+    });
+    
+    window.addEventListener('beforeunload', function() {
+        if (window.location.pathname === '/contact.html') {
+            localStorage.removeItem('contactClicked');
+        }
+    });
+})*/
+document.addEventListener("DOMContentLoaded", function () {
+    const contactLink = document.getElementById('contact');
+    
+    contactLink?.addEventListener('click', function () {
+        this.classList.add('active');
+        localStorage.setItem('contactClicked', 'true');
+    });
+    
     if (localStorage.getItem('contactClicked') === 'true') {
-        document.getElementById('contact').classList.add('active');
+        contactLink?.classList.add('active');
     }
 });
 
-window.addEventListener('beforeunload', function() {
-    if (window.location.pathname === '/contact.html') {
+window.addEventListener('beforeunload', function () {
+    if (window.location.pathname.endsWith('/contact.html')) {
         localStorage.removeItem('contactClicked');
     }
 });
+
+
 
 // carousel action
 document.addEventListener('DOMContentLoaded', () => {
